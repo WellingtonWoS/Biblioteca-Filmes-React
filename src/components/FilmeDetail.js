@@ -9,7 +9,8 @@ function FilmeDetail({ filmes }) {
   }
 
   return (
-    <div>
+    <div className="card-filme-detail">
+      <h1>Detalhes do Filme</h1>
       <h2>{filme.titulo}</h2>
       <p>Ano: {filme.ano}</p>
       <p>Diretor: {filme.diretor}</p>

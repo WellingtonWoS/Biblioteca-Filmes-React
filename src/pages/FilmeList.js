@@ -8,7 +8,7 @@ function FilmeList({ filmes, onDelete }) {
         <p>Nenhum filme cadastrado.</p>
       ) : (
         filmes.map(filme => (
-          <FilmeCard key={filme.id} filme={filme} onDelete={onDelete} />
+          <div className="card"><FilmeCard key={filme.id} filme={filme} onDelete={onDelete} /></div>
         ))
       )}
     </div>

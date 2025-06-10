@@ -158,3 +158,20 @@ button {
   font-weight: bold;
   line-height: 1.5;
 }
+
+/* Card Filme Detail */
+.card-filme-detail {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 1em;
+  margin: 1em auto;
+  width: 80%;
+  box-shadow: 0 4px 8px rgba(240, 7, 7, 0.2);
+}
+
+.card-filme-detail:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 6px 12px rgba(240, 7, 7, 0.3);
+  transform: scale(1.05);
+}
