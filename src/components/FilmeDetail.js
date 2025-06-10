@@ -19,4 +19,4 @@ function FilmeDetail({ filmes }) {
   );
 }
 
-export default FilmeDetail;
+export default FilmeDetail; 

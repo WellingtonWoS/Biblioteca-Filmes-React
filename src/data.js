@@ -1,3 +1,4 @@
+// Exemplo de arquivo de dados para uma lista de filmes
 export const filmesIniciais = [
   {
     id: 1,

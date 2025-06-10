@@ -19,4 +19,4 @@ function FilmeCard({ filme, onDelete }) {
   );
 }
 
-export default FilmeCard;
+export default FilmeCard; 

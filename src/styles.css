@@ -127,7 +127,34 @@ button {
   background-color: #da190b;
   transform: scale(1.05);
 }
+/* Card Home */
+.card-home {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 1em;
+  margin: 1em auto;
+  width: 80%;
+  box-shadow: 0 4px 8px rgba(240, 7, 7, 0.2);
+  transition: transform 0.3s ease;
+}
 
+.card-home:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(240, 7, 7, 0.3);
+  background-color: rgba(255, 255, 255, 0.2);
+}
 
-
-
+.card-home-intro {
+  text-align: center;
+  color: #f0f0f0;
+  font-size: 1.2em;
+  margin: 1em 0;
+  padding: 1em;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+  line-height: 1.5;
+}
