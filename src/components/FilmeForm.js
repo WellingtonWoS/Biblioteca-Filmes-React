@@ -44,7 +44,20 @@ function FilmeForm({ filmes, onSubmit }) {
       <input name="ano" value={filme.ano} onChange={handleChange} placeholder="Ano" />
       <input name="diretor" value={filme.diretor} onChange={handleChange} placeholder="Diretor" />
       <input name="genero" value={filme.genero} onChange={handleChange} placeholder="Gênero" />
-      <input name="classificacao" value={filme.classificacao} onChange={handleChange} placeholder="Classificação" />
+      <label>
+        Classificação Indicativa:
+        <select name="classificacao" value={filme.classificacao} onChange={handleChange}>
+          <option value="Livre">Livre</option>
+          <option value="10">10</option>
+          <option value="12">12</option>
+          <option value="14">14</option>
+          <option value="16">16</option>
+          <option value="18">18</option>
+        </select>
+      </label>
+      <span className={`classificacao-tag classificacao-${filme.classificacao}`}>
+        {filme.classificacao === 'Livre' ? 'Livre' : `${filme.classificacao}+`}
+      </span>
       <button type="submit" className="btn-editar">
         {id ? 'Atualizar' : 'Cadastrar'}
       </button>

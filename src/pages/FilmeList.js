@@ -1,15 +1,18 @@
 import FilmeCard from '../components/FilmeCard';
 
+
 function FilmeList({ filmes, onDelete }) {
   return (
-    <div>
-      <h2>Lista de Filmes</h2>
+    <div className="filme-list-container">
+      <h2 className="titulo-lista">🎞️ Lista de Filmes</h2>
       {filmes.length === 0 ? (
-        <p>Nenhum filme cadastrado.</p>
+        <p className="nenhum-filme">Nenhum filme cadastrado.</p>
       ) : (
-        filmes.map(filme => (
-          <div className="card"><FilmeCard key={filme.id} filme={filme} onDelete={onDelete} /></div>
-        ))
+        <div className="grid-filmes">
+          {filmes.map(filme => (
+            <FilmeCard key={filme.id} filme={filme} onDelete={onDelete} />
+          ))}
+        </div>
       )}
     </div>
   );

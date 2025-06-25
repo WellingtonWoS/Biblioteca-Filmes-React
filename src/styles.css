@@ -34,7 +34,7 @@ nav a:hover {
   padding: 1em;
   margin: 1em auto;
   width: 80%;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
 }
 
@@ -44,15 +44,16 @@ nav a:hover {
 
 /* Formulário */
 form {
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(0, 0, 0, 0.3);
   padding: 1em;
   border-radius: 10px;
   width: 80%;
   margin: 2em auto;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-input, select {
+input,
+select {
   width: 100%;
   padding: 10px;
   margin: 0.5em 0;
@@ -60,17 +61,18 @@ input, select {
   border-radius: 5px;
 }
 
-h1, h2 {
+h1,
+h2 {
   text-align: center;
 }
 
 /* Footer */
 footer {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   padding: 1em;
   text-align: center;
   margin-top: 2em;
-  border-top: 1px solid rgba(255,255,255,0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 /* Botões estilizados */
@@ -85,7 +87,9 @@ button {
 }
 
 
-.btn-detalhes, .btn-editar, .btn-excluir {
+.btn-detalhes,
+.btn-editar,
+.btn-excluir {
   padding: 8px 18px;
   margin: 5px;
   border-radius: 20px;
@@ -97,7 +101,8 @@ button {
 
 /* Botão Detalhes */
 .btn-detalhes {
-  background-color: #4caf50; /* verde */
+  background-color: #4caf50;
+  /* verde */
   color: white;
 }
 
@@ -108,7 +113,8 @@ button {
 
 /* Botão Editar */
 .btn-editar {
-  background-color: #2196f3; /* azul */
+  background-color: #2196f3;
+  /* azul */
   color: white;
 }
 
@@ -119,7 +125,8 @@ button {
 
 /* Botão Excluir */
 .btn-excluir {
-  background-color: #f44336; /* vermelho */
+  background-color: #f44336;
+  /* vermelho */
   color: white;
 }
 
@@ -127,6 +134,7 @@ button {
   background-color: #da190b;
   transform: scale(1.05);
 }
+
 /* Card Home */
 .card-home {
   background-color: rgba(255, 255, 255, 0.1);
@@ -153,7 +161,7 @@ button {
   padding: 1em;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s ease;
   font-weight: bold;
   line-height: 1.5;
@@ -175,3 +183,188 @@ button {
   box-shadow: 0 6px 12px rgba(240, 7, 7, 0.3);
   transform: scale(1.05);
 }
+
+/*      */
+.home-valor-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 40px;
+  gap: 40px;
+  background: linear-gradient(to right, #1e1e1e, #2c2c2c);
+  color: white;
+  min-height: 90vh;
+  flex-wrap: wrap;
+  /* torna responsivo */
+}
+
+.imagem-lado {
+  flex: 1;
+  min-width: 280px;
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+.imagem-cinema {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 16px;
+  box-shadow: 0 0 16px rgba(255, 255, 255, 0.2);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.texto-lado {
+  flex: 1;
+  max-width: 600px;
+  text-align: left;
+  animation: fadeInRight 1s ease-in-out;
+}
+
+.titulo-valor {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #ffcc00;
+}
+
+.texto-valor {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.btn-explorar {
+  background-color: #ff9800;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.btn-explorar:hover {
+  background-color: #e07b00;
+}
+
+/* Animações */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.classificacao-tag {
+  padding: 4px 8px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.classificacao-Livre {
+  background-color: green;
+}
+
+.classificacao-10 {
+  background-color: #00a7fa;
+}
+
+.classificacao-12 {
+  background-color: #fbfb05;
+}
+
+.classificacao-14 {
+  background-color: #fb8c00;
+}
+
+.classificacao-16 {
+  background-color: #ef5350;
+}
+
+.classificacao-18 {
+  background-color: #000000;
+}
+
+
+.card-filme {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.card-filme:hover {
+  transform: translateY(-5px);
+}
+
+.card-topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tag-classificacao {
+  padding: 4px 10px;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.classificacao-Livre { background-color: green; }
+.classificacao-10 { background-color: #66bb6a; }
+.classificacao-12 { background-color: #ffa726; }
+.classificacao-14 { background-color: #fb8c00; }
+.classificacao-16 { background-color: #ef5350; }
+.classificacao-18 { background-color: #d32f2f; }
+
+.card-botoes {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.btn-card {
+  flex: 1;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  color: grey;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.detalhes { background-color: #2196f3; }
+.detalhes:hover { background-color: #1976d2; }
+
+.editar { background-color: #ff9800; }
+.editar:hover { background-color: #fb8c00; }
+
+.excluir { background-color: #f44336; }
+.excluir:hover { background-color: #d32f2f; }
+
+

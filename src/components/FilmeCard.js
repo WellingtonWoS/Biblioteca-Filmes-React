@@ -4,19 +4,24 @@ function FilmeCard({ filme, onDelete }) {
   const navigate = useNavigate();
 
   return (
-    <div className="card">
-      <h3>{filme.titulo}</h3>
-      <p>Ano: {filme.ano}</p>
-      <p>Diretor: {filme.diretor}</p>
-      <p>Gênero: {filme.genero}</p>
-      <p>Classificação: {filme.classificacao}</p>
+    <div className="card-filme">
+      <div className="card-topo">
+        <h3>{filme.titulo}</h3>
+        <span className={`tag-classificacao classificacao-${filme.classificacao}`}>
+          {filme.classificacao === 'Livre' ? 'Livre' : `${filme.classificacao}+`}
+        </span>
+      </div>
+      <p><strong>Ano:</strong> {filme.ano}</p>
+      <p><strong>Diretor:</strong> {filme.diretor}</p>
+      <p><strong>Gênero:</strong> {filme.genero}</p>
 
-      <button onClick={() => navigate(`/filmes/${filme.id}`)} className="btn-detalhes">Detalhes</button>
-      <button onClick={() => navigate(`/filmes/${filme.id}/editar`)} className="btn-editar">Editar</button>
-      <button onClick={() => onDelete(filme.id)} className="btn-excluir">Excluir</button>
-
+      <div className="card-botoes">
+        <button onClick={() => navigate(`/filmes/${filme.id}`)} className="btn-card detalhes">Detalhes</button>
+        <button onClick={() => navigate(`/filmes/${filme.id}/editar`)} className="btn-card editar">Editar</button>
+        <button onClick={() => onDelete(filme.id)} className="btn-card excluir">Excluir</button>
+      </div>
     </div>
   );
 }
 
-export default FilmeCard; 
+export default FilmeCard;

@@ -12,11 +12,11 @@ function App() {
   const [filmes, setFilmes] = useState([]);
 
   const addFilme = (filme) => {
-  const novoFilme = { ...filme, id: Date.now() };
-  setFilmes(prev => [...prev, novoFilme]);
-  console.log('Filmes atualizados:', [...filmes, novoFilme]);
-  console.log('Filmes atualizados:', novoFilme);
-};
+    const novoFilme = { ...filme, id: Date.now() };
+    setFilmes(prev => [...prev, novoFilme]);
+    console.log('Filmes atualizados:', [...filmes, novoFilme]);
+    console.log('Filmes atualizados:', novoFilme);
+  };
 
 
   const updateFilme = (id, updatedFilme) => {
