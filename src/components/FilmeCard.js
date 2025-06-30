@@ -6,14 +6,14 @@ function FilmeCard({ filme, onDelete }) {
   return (
     <div className="card-filme">
       <div className="card-topo">
-        <h3>{filme.titulo}</h3>
+        <h3>🎞️ {filme.titulo}</h3>
         <span className={`tag-classificacao classificacao-${filme.classificacao}`}>
           {filme.classificacao === 'Livre' ? 'Livre' : `${filme.classificacao}+`}
         </span>
       </div>
-      <p><strong>Ano:</strong> {filme.ano}</p>
-      <p><strong>Diretor:</strong> {filme.diretor}</p>
-      <p><strong>Gênero:</strong> {filme.genero}</p>
+      <p><strong>📅 Ano:</strong> {filme.ano}</p>
+      <p><strong>🎬 Diretor:</strong> {filme.diretor}</p>
+      <p><strong>🎭 Gênero:</strong> {filme.genero}</p>
 
       <div className="card-botoes">
         <button onClick={() => navigate(`/filmes/${filme.id}`)} className="btn-card detalhes">Detalhes</button>

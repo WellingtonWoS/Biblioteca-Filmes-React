@@ -10,12 +10,12 @@ function FilmeDetail({ filmes }) {
 
   return (
     <div className="card-filme-detail">
-      <h1>Detalhes do Filme</h1>
-      <h2>{filme.titulo}</h2>
-      <p>Ano: {filme.ano}</p>
-      <p>Diretor: {filme.diretor}</p>
-      <p>Gênero: {filme.genero}</p>
-      <p>Classificação: {filme.classificacao}</p>
+      <h1>🎞️ DETALHES DO FILME</h1>
+      <h2>🎞️ Título Oficial: {filme.titulo} 🎞️</h2>
+      <p>📅 Ano de Lançamento: {filme.ano}</p>
+      <p>🎬 Diretor: {filme.diretor}</p>
+      <p>🎭 Gênero: {filme.genero}</p>
+      <p>🧒 Classificação Indicativa: {filme.classificacao}</p>
     </div>
   );
 }
